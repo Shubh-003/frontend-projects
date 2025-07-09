@@ -1,0 +1,582 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.menu{
+    display: none;
+}
+
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+    background-attachment:fixed;
+    
+    background: transparent !important;
+    position:fixed;
+    width: 100%;
+    overflow: hidden;
+    transition: background 0.3s ease-in-out;
+    z-index: 99;
+}
+.logo h1{
+    font-size: 30px;
+    color:white;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+.landing{
+    background-image: url(images/hero_1done.jpg) ;
+    width: 100%;
+    height: 80vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+
+.home{
+    height: 80%;
+    align-content: center;
+}
+.home-heading{
+    text-align: center;
+    h1{
+        color: white;
+        font-size: 50px;
+        font-weight: 300;
+    }
+    p{
+        letter-spacing: 3px;
+        color: white;
+        margin-top: 10px;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+}
+
+/* css for scroll transition */
+.header.scrolled {
+    background: white !important;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    
+}
+
+.scrolled .logo h1 {
+    color: black; /* Change text color for visibility */
+}
+
+.scrolled .menu ul a {
+    color: rgba(0, 0, 0, 0.548); /* Change menu text color */
+}
+/* csss to red home */
+.scrolled .menu ul #home{
+    color: rgba(255, 0, 0, 0.84); /* Change menu text color */
+
+}
+.scrolled .menu ul a:hover{
+color: black;
+}
+
+a:hover {
+    color: white;
+ }
+
+/* Rooms */
+.heading{
+    color: #000;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 40px 20px;
+    margin-bottom: 40px;
+    text-align: center;
+    text-decoration: underline;
+
+    h1{
+        
+    font-weight: 100;
+    letter-spacing: 2px;
+    }
+}
+
+.room{
+    background-color:rgba(241, 240, 240, 0.801);
+    padding: 50px 10px;
+}
+.room-img{
+    width: 100%;
+    height:100%;
+    /* border-radius: 10px; */
+    object-fit: cover;
+}
+.room-img:hover{
+    scale: 1.01;
+    transition: all 0.4s ease-in-out;
+}
+.room-card-one,
+.room-card-two,
+.room-card-three,
+.room-card-four,
+.room-card-five,    
+.room-card-six{
+    margin: 10px;
+    /* border-radius: 10px; */
+    background: white;   
+}
+#room-caption{
+    /* font-size: 1.5rem; */
+    background-color: white;  
+    text-align: center;
+    color: rgb(0, 0, 0);
+    padding: 40px 0 40px 0;
+
+    h2{
+        font-weight: 300;  
+         font-family: 'Times New Roman', Times, serif;
+    }
+}
+#room-caption p{
+    padding: 10px;
+    font-size: larger;
+    color: rgb(73, 112, 153);
+    font-weight: 300;  
+}
+
+/* About */
+.about-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;    
+}
+.about{
+    padding: 50px 20px;
+}
+.about-heading h1{
+    font-size: 3rem;
+    font-weight: 300;
+    color: #000;
+    padding: 30px 0px;
+    text-decoration: underline;
+}
+.about-heading p,a{
+    font-size: 1.2rem;
+    line-height: 30px;
+    color: rgba(131, 130, 130, 0.845);
+    /* width: auto; */
+    text-align:left;
+}
+
+/* Features */
+.heading{
+    font-size: 25px;
+}
+#features{
+    padding: 30px 0px;
+    padding-bottom: 100px;
+}
+.features-logo{
+    background:white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    padding:0px 10px;
+    gap: 50px;
+}
+.fe-img{
+    width: 80px;
+    height: 60px;
+    margin-bottom: 16px;
+    object-fit: cover;
+}
+.features-fig figcaption{
+    text-align: center;
+    color: black;
+}
+
+.offers{
+    width: 100vw;
+    padding: 20px;
+
+    background-image: url(images/hero_1.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment:fixed;
+}
+
+.div-offer{
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 30px;
+    
+}
+.div-offer button{
+    background: transparent;
+    color:white;
+    padding: 10px;
+    border: 1px solid yellow;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    
+    cursor: pointer;
+    margin-top: 10px;
+    display: inline-block;
+    position: relative;
+}
+.div-offerTime #p1{
+    font-size: 1rem;
+    letter-spacing: 3px;
+    word-spacing: 2px;
+    color:white;
+    padding: 10px 0px 20px 0px;
+    text-align: left;
+    
+}
+.div-offerTime #p2{
+    font-size: 2.2rem;
+    color:white;
+    padding: 0;
+    margin: 0;
+    sub{
+        font-size: 1rem;
+        color: rgba(255, 255, 255, 0.634);
+    }
+}
+
+/* footer */
+
+footer{
+    background-color: rgba(0, 0, 0, 0.8);  
+}
+ul{
+	list-style:none;
+    
+}
+li a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.452);
+    align-items:start;
+}
+.f-row {
+    display: flex;
+    /* flex-direction: row; */
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* background-color: rgba(0, 0, 0, 0.8); */
+    padding: 50px 10px;
+    font-size: 1rem;
+}
+.footer-div button{
+    color: white;
+    background-color: rgb(208, 58, 58);
+    width: 100px;
+    border-radius: 90px;
+    font-size: 0.8rem;
+    padding: 7px;
+    border: none;
+    cursor: pointer;
+}
+.footer-div{
+    line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+    /* align-items:start; */
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    color: rgb(255, 255, 255);
+    h1{
+        line-height: 3;
+        font-size: 1.2rem; 
+    }
+    p{
+        font-size: 0.8rem; 
+    }
+    ul a{
+        font-size: 0.8rem; 
+    }
+}
+    .media-icon {
+        display: flex;
+        gap: 20px
+    }
+    .media-icon img{
+        height: 40px;
+        width: 40px;
+    }
+
+    #copyright{
+        text-align: center;
+        color: rgba(255, 255, 255, 0.558);
+        font-size: small;
+        padding: 80px 0px;
+     }
+
+
+ 
+
+
+
+
+
+
+
+
+/* breakpoint 768 */
+@media screen and (min-width:768px){
+    .header{
+        justify-content: space-between;
+        padding: 20px 40px;
+        background-attachment: fixed;
+    }
+    .home-heading{
+        padding-top: 200px;
+        h1{
+            font-size: 100px;
+            font-weight: bold;
+        }
+        p{
+            font-size: 20px;
+        }
+    }
+        .landing{
+            background-image: url(images/hero_1done.jpg) ;
+            width: 100%;
+            height: 100vh;
+        }
+    
+
+/* room */
+    .room{
+        background-color:rgba(241, 240, 240, 0.801);
+        padding: 50px 10px;
+    }
+    .room-cards{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 20px;
+    }
+    .room-card-one,
+    .room-card-two,
+    .room-card-three,
+    .room-card-four,
+    .room-card-five,    
+    .room-card-six{
+        height: auto;
+        width: 300px;
+        margin: 10px;
+        background: white;
+       
+    }   
+    
+    .features-logo{
+        padding:0px 80px;
+        gap: 70px;
+    }
+    .features-fig figcaption{
+        text-align: center;
+        color: black;
+    }
+
+    /* offer */
+    .offers{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 40px;
+    }
+    
+    .div-offer{
+        font-size: 1.8rem;
+        color: white;
+        
+    }
+    .div-offer button{
+        background: transparent;
+        color:white;
+        padding: 10px;
+        border: 1px solid yellow;
+        padding: 0.375rem 0.75rem;
+        font-size: 1rem;
+        line-height: 1.5;
+        cursor: pointer;
+        /* align-items:flex-start; */
+        display: inline-block;
+        position: relative;
+    }
+    .div-offerTime{
+        align-items: start;
+    }
+    
+    
+    
+}
+
+
+
+
+
+
+
+/* breakpoint 992 */
+@media screen and (min-width:992px){
+    .menu-icon{
+        display: none;
+    }
+    .menu{
+        display:block;
+        
+    }
+    .menu ul {
+        display: flex;
+        list-style: none;
+        justify-content: space-evenly;
+        gap: 30px;
+        align-items: center;
+        padding: 0px 20px;
+    }
+    .menu ul li,a{
+        /* font-weight: 300; */
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+    }
+    .header{
+        justify-content: space-around;
+        padding: 20px 40px;
+        background-attachment: fixed;
+    }
+
+    /* room */
+    .room{
+        padding: 50px 10px;
+    }
+    .room-cards{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 0px 100px;
+        gap: 0px;
+    }
+    .room-card-one,
+    .room-card-two,
+    .room-card-three,
+    .room-card-four,
+    .room-card-five,    
+    .room-card-six{
+        height: auto;
+        width: 400px;
+        margin: 10px;
+        background: white;
+       
+    }  
+
+    /* About css */
+.about{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 50px;
+}
+.about-heading{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 50px;
+    background-color: white;
+}
+
+#features{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.features-logo{
+    background:white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0px 140px;
+    gap: 50px;
+}
+.fe-img{
+    width: 110px;
+    height: 100px;
+    margin-bottom: 16px;
+    object-fit: cover;
+
+}
+.fe-logo{
+    margin: 10px;
+     padding: 0px 60px 20px 60px;
+
+}
+.features-fig figcaption{
+    font-size: x-large;
+    align-items: center;
+    color: black;
+}
+
+/* offers */
+.offers{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    background-color: white;
+    padding: 100px;
+}
+
+.div-offer{
+    font-size: 3rem;
+    color: white;
+    
+}
+.div-offerTime #p2{
+    font-size: 3rem;
+    sub{
+        font-size: 1rem;
+    }
+}
+
+.footer-div{
+    line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+    /* align-items:start; */
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    color: rgb(255, 255, 255);
+    h1{
+        line-height: 3;
+        font-size: 1.2rem; 
+    }
+    p{
+        font-size: 1rem; 
+    }
+    ul a{
+        font-size: 1rem; 
+    }
+}
+
+#copyright{
+    text-align: center;
+    color: rgba(255, 255, 255, 0.558);
+    font-size: larger;
+    padding: 80px 0px;
+ }
+
+}
